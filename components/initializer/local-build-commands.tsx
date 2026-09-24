@@ -5,7 +5,7 @@ import { strings } from '@/lib/strings'
 import { CopyButton } from './copy-button'
 
 export const LOCAL_BUILD_ID = 'build-locally'
-const DOCS_URL = 'https://github.com/GibranKhalil/AthenaEnv/blob/main/docs/BUILDING_ATHENA.md'
+const DOCS_URL = 'https://github.com/AthenaENV-PS2-GAMES/AthenaEnv/blob/modular/docs/BUILDING_ATHENA.md'
 
 /** Always visible; collapsible (closed by default) when a build server is available. */
 export function LocalBuildCommands({
