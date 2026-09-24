@@ -21,7 +21,7 @@ export function SiteHeader({ catalog, server }: { catalog: AthenaCatalog | null;
         <div className="flex min-w-0 items-center gap-3">
           <div className="grid size-10 shrink-0 place-items-center border border-primary/50 bg-primary/10 p-1">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/229382275-C12ycPyLnS0kuYyrBoDJd3qBgc1a9S.png"
+              src="/athena-logo.png"
               alt={t.logoAlt}
               className="size-full object-contain"
             />
