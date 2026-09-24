@@ -25,6 +25,9 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-ps2: var(--ps2);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
   --radius-sm: 0.2rem;
   --radius-md: 0.3rem;
   --radius-lg: 0.4rem;
@@ -51,6 +54,9 @@
   --border: oklch(1 0 0 / 11%);
   --input: oklch(1 0 0 / 13%);
   --ring: oklch(0.68 0.10 310);
+  --ps2: #3b8fe0;
+  --success: oklch(0.72 0.15 155);
+  --warning: oklch(0.80 0.14 80);
 }
 .light {
   color-scheme: light;
@@ -62,6 +68,7 @@
   --muted: oklch(0.93 0.01 290); --muted-foreground: oklch(0.45 0.025 290);
   --accent: oklch(0.91 0.04 310); --accent-foreground: oklch(0.2 0.02 290);
   --destructive: oklch(0.55 0.2 25); --border: oklch(0.2 0.02 290 / 14%); --input: oklch(0.2 0.02 290 / 16%); --ring: oklch(0.58 0.11 310);
+  --ps2: #0070d1; --success: oklch(0.52 0.14 155); --warning: oklch(0.55 0.13 70);
 }
 
 * { @apply border-border outline-ring/50; }
@@ -69,3 +76,12 @@ html { background: var(--background); }
 body { @apply bg-background text-foreground; }
 button, input { font-family: inherit; }
 ::selection { background: color-mix(in oklch, var(--primary) 35%, transparent); }
+
+@keyframes indeterminate {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(250%); }
+}
+.animate-indeterminate { animation: indeterminate 1.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .animate-indeterminate { animation-duration: 4s; }
+}
