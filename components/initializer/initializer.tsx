@@ -401,7 +401,7 @@ export function Initializer() {
                 />
               </section>
 
-              <aside className="order-1 flex min-w-0 flex-col gap-5 lg:sticky lg:top-0 lg:order-2 lg:-mx-1 lg:-my-5 lg:max-h-screen lg:overflow-y-auto lg:px-1 lg:py-5">
+              <aside className="order-1 flex min-w-0 flex-col gap-5 *:shrink-0 lg:sticky lg:top-0 lg:order-2 lg:-mx-1 lg:-my-5 lg:max-h-screen lg:overflow-y-auto lg:px-1 lg:py-5">
                 <Card className="border-primary/30 bg-card/70">
                   <CardHeader className="border-b border-border/60 pb-4">
                     <CardTitle>
